@@ -1,5 +1,6 @@
 package co.com.choucair.pratice.stepdefinitions;
 
+import co.com.choucair.pratice.tasks.CreditSimulation;
 import co.com.choucair.pratice.tasks.LeasingProduct;
 import co.com.choucair.pratice.tasks.OpenUp;
 import cucumber.api.java.Before;
@@ -17,7 +18,6 @@ public class SimulacionCreditoStepDefination {
     @Before
     public void setStage () {
         OnStage.setTheStage(new OnlineCast());
-        //OnStage.theActorCalled("Karina");
     }
 
     @Given("^than Karina enter Bancolombia's escrow account$")
@@ -36,7 +36,9 @@ public class SimulacionCreditoStepDefination {
 
     @When("^performs the credit simulation$")
     public void performsTheCreditSimulation() throws Exception {
-
+        theActorInTheSpotlight().attemptsTo(
+                CreditSimulation.creditsimulation()
+        );
     }
 
     @Then("^you can view credit rates and fees$")
