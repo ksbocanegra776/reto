@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Verificar el funcionamiento de la pantalla de simulación de Canon Financiero" skipped="0" tests="1" time="0.63" timestamp="2022-04-07 06:07:48"><testcase name="simular un crédito de vivienda"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.choucair.pratice.stepdefinitions.SimulacionCreditoStepDefinitions.que_karina_ingresa_al_aplicativo_Bancolombia(SimulacionCreditoStepDefinitions.java:23)&#13;
+✽.que karina ingresa al aplicativo Bancolombia(src/test/resources/features/bancolombia.feature:11)&#13;
+</system-err></testcase></testsuite>
